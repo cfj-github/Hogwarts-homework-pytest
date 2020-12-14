@@ -5,7 +5,7 @@ class TestCalc():
     def setup_class(self):
         self.cal = Calculator()
         print("开始计算")
-    def tear_down(self):
+    def teardown_class(self):
         print("计算结束")
 
     @pytest.mark.parametrize("a,b,expect",[
